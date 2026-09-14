@@ -11,7 +11,7 @@ which makes it useful for research questions and comparing different kinds of fa
 
 ## Three Data Questions
 
-# Question: How many public restroom facilities are located in parks?
+### Question: How many public restroom facilities are located in parks?
 park_count = 0
 for row in restrooms:
     if row["Location Type"] == "Park":
@@ -24,7 +24,7 @@ This works because each row represents one public restroom facility, and the Loc
 label describing where the restroom is located. Counting the rows where Location Type equals "Park" gives the total number of 
 restroom facilities located in parks.
 
-# Question: How many restrooms are listed as Fully Accessible, and how many are listed as Not Accessible?
+### Question: How many restrooms are listed as Fully Accessible, and how many are listed as Not Accessible?
 fully_accessible = 0
 not_accessible = 0
 for row in restrooms:
@@ -41,7 +41,7 @@ This works because Accessibility is a single column that categorizes each restro
 Since each row represents one facility, counting the rows labeled "Fully Accessible" and "Not Accessible" shows
 how many facilities fall into each of those categories.
 
-# Question: Among park restrooms, how many are listed as Fully Accessible, and how many are listed as Not Accessible?
+### Question: Among park restrooms, how many are listed as Fully Accessible, and how many are listed as Not Accessible?
 park_fully_accessible = 0
 park_not_accessible = 0
 for row in restrooms:
